@@ -1,0 +1,1089 @@
+
+/*Font Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,200;1,300;1,500&family=Open+Sans:wght@300;400&display=swap');
+    /* End font*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+blockquote, body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, li, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    font-family: Montserrat,'Open Sans',Arial,sans-serif;
+    position: relative;
+    padding-top: 100vh;
+}
+
+body>* {
+    position: relative;
+    z-index: 100;
+}
+
+body * {
+    /* -webkit-box-sizing: border-box; */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 5px;
+    background-color: #2f2f31;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #8b0000;
+}
+
+article {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+abbr, fieldset, img {
+    border: 0;
+}
+
+div {
+    display: block;
+}
+
+.header-info {
+    height: 30px;
+    padding: 5px 0;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header-info__ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -moz-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;}
+
+.header-info__li {
+    font-size: 13px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+
+.icon_small {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+}
+
+.icon {
+    min-width: 15px;
+    min-height: 15px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+.header-info svg {
+    fill: #fff;
+    width: 11px;
+}
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+.first-screen {
+    height: 610px;
+    height: -webkit-calc(100vh - 30px);
+    height: -moz-calc(100vh - 30px);
+    height: calc(100vh - 30px);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 30px;
+    z-index: 1;
+    padding-top: 38px;
+    padding-bottom: 127px;
+    background-image: url(https://www.sportfit-obolon.com.ua/wp-content/themes/sportfit/assets/img/main-banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-color: #333;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+
+.navigation {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 125px;
+    z-index: 1;}
+
+
+.navigation__ul_nav {
+    padding: 20px 150px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -moz-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+.navigation__ul_home {
+    width: -webkit-calc(25% - 20px);
+    width: -moz-calc(25% - 20px);
+    width: calc(25% - 20px);}
+
+.navigation__li {
+    list-style: none;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 10;
+    margin-left: 15px;
+}
+
+.banner {
+    width: 52%;
+}
+
+.banner__h {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.tt-u {
+    text-transform: uppercase;
+}
+
+
+.banner__link {
+    margin-top: 26px;
+    position: relative;
+    right: 50px;
+    margin-left: auto;
+}
+.btn_link {
+    display: block;
+    width: 205px;
+    text-decoration: none;
+}
+.btn {
+    border: 2px solid #8b0000;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+    padding: 0 30px;
+    -webkit-transition: .3s cubic-bezier(.86,.18,.86,1.31);
+    -o-transition: .3s cubic-bezier(.86,.18,.86,1.31);
+    -moz-transition: .3s cubic-bezier(.86,.18,.86,1.31);
+    transition: .3s cubic-bezier(.86,.18,.86,1.31);
+    cursor: pointer;
+}
+
+
+.banner__span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.d-b {
+    display: block;
+}
+
+.banner__span_end {
+    font-size: 63px;
+    font-weight: 700;
+}
+
+
+.about {
+    background: url(https://www.sportfit-obolon.com.ua/wp-content/themes/sportfit/assets/img/cement-bg.jpg) 0 0/cover no-repeat #333;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    padding: 150px 0;
+    -webkit-box-shadow: -1px -3px 10px 6px rgb(0 0 0 / 50%);
+    -moz-box-shadow: -1px -3px 10px 6px rgba(0,0,0,.5);
+    box-shadow: -1px -3px 10px 6px rgb(0 0 0 / 50%);
+
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+
+
+.about-article {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.about-article__logo {
+    width: -webkit-calc(41.66666666666667% - 20px);
+    width: -moz-calc(41.66666666666667% - 20px);
+    width: calc(41.66666666666667% - 20px);
+    padding-right: 50px;
+    position: relative;
+    bottom: 7px;
+}
+.about-article__figcaption {
+     color: #fff;
+     font-size: 16px;
+ }
+
+
+.about-article__p {
+    width: -webkit-calc(58.333333333333336% - 20px);
+    width: -moz-calc(58.333333333333336% - 20px);
+    width: calc(58.333333333333336% - 20px);
+    color: #ddd;
+    font-size: 14px;
+}
+
+
+.services {
+    background-color: #262628;
+    padding-top: 40px;
+    padding-bottom: 95px;
+}
+
+.service {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.service__figure {
+    width: -webkit-calc(50% - 20px);
+    width: -moz-calc(50% - 20px);
+    width: calc(50% - 20px);
+}
+
+
+.service__wrap {
+    width: -webkit-calc(50% - 20px);
+    width: -moz-calc(50% - 20px);
+    width: calc(50% - 20px);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.service__h4 {
+    color: #666;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.service__h3 {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.service__p {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.service__btn {
+    margin-top: 30px;
+}
+
+
+.service:nth-child(2n) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+.prices {
+    background-image: url(	https://www.sportfit-obolon.com.ua/wp-content/themes/sportfit/assets/img/cement-bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #333;
+    padding-bottom: 95px;
+    padding-top: 95px;
+}
+
+.prices__h {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 57px;
+    margin-left: -webkit-calc(8.333333333333334% + 10px);
+    margin-left: -moz-calc(8.333333333333334% + 10px);
+    margin-left: calc(8.333333333333334% + 10px);
+}
+
+
+
+.prices__span_h {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ddd;
+}
+.d-b {
+    display: block;
+}
+
+.prices .row {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+
+
+.card {
+    background-color: #1d1c1e;
+    padding: 50px 30px 152px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: -webkit-calc(25% - 20px);
+    width: -moz-calc(25% - 20px);
+    width: calc(25% - 20px);
+    color: #fff;
+}
+
+.card__h {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;}
+
+.tt-u {
+    text-transform: uppercase;
+}
+
+.card__p {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+
+.card__ul {
+    margin-bottom: 36px;
+    padding-inline-start: 0px;
+}
+
+.card__li {
+    font-size: 14px;
+    color: #eee;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.card__li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 4px;
+    left: 0;
+    background-image: url(https://www.sportfit-obolon.com.ua/wp-content/themes/sportfit/assets/img/svg/ok.svg);
+    background-repeat: no-repeat;
+}
+
+.card__price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #eee;
+}
+
+.card__btn {
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+}
+
+.btn-wrap {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: -webkit-calc(33.333333333333336% - 20px);
+    width: -moz-calc(33.333333333333336% - 20px);
+    width: calc(33.333333333333336% - 20px);
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+.prices__btn {
+    height: 72px;
+    line-height: 72px;
+}
+
+/*!* The Modal (background) *!*/
+/*.modal {*/
+/*    display: none; !* Hidden by default *!*/
+/*    position: fixed; !* Stay in place *!*/
+/*    z-index: 999; !* Sit on top *!*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    width: 100%; !* Full width *!*/
+/*    height: 100%; !* Full height *!*/
+/*    overflow: auto; !* Enable scroll if needed *!*/
+/*    background-color: rgb(0,0,0); !* Fallback color *!*/
+/*    background-color: rgba(0,0,0,0.4); !* Black w/ opacity *!*/
+/*}*/
+
+/*!* Modal Content/Box *!*/
+/*.modal-content {*/
+/*    background-color: #fefefe;*/
+/*    margin: 15% auto; !* 15% from the top and centered *!*/
+/*    padding: 20px;*/
+/*    border: 1px solid #888;*/
+/*    width: 80%; !* Could be more or less, depending on screen size *!*/
+/*}*/
+
+/*!* The Close Button *!*/
+/*.close {*/
+/*    color: #aaa;*/
+/*    float: right;*/
+/*    font-size: 28px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.close:hover,*/
+/*.close:focus {*/
+/*    color: black;*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.modals {
+    display: none;
+    padding: 50px 50px 20px;
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+}
+
+.controls {
+    position: fixed;
+    z-index: 5001;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+}
+
+.controls__btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.controls #close {
+    -webkit-transition: fill .3s;
+    -o-transition: fill .3s;
+    -moz-transition: fill .3s;
+    transition: fill .3s;
+    fill: #ddd;
+    cursor: pointer;
+}
+
+
+
+
+.modal-content {
+    display: none;
+    overflow: auto;
+    max-height: 100%;
+}
+
+.modal-content.active {
+    display: block;
+}
+.modal-prices {
+    color: #fff;
+}
+
+.modal-prices__h {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.modals__h {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.modal-prices .block-prices {
+    background-color: #000;
+    width: 100%;
+    padding: 40px;
+    -webkit-box-shadow: 3px 3px 5px 5px rgb(10 10 10 / 70%);
+    -moz-box-shadow: 3px 3px 5px 5px rgba(10,10,10,.7);
+    box-shadow: 3px 3px 5px 5px rgb(10 10 10 / 70%);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.card-modal {
+    background-color: transparent;
+    width: -webkit-calc(35% - 100px);
+    width: -moz-calc(35% - 100px);
+    width: calc(35% - 100px);
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.card {
+    background-color: #1d1c1e;
+    padding: 50px 30px 152px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: -webkit-calc(25% - 20px);
+    width: -moz-calc(25% - 20px);
+    width: calc(25% - 20px);
+    color: #fff;
+}
+
+.card__h {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.tt-u {
+    text-transform: uppercase;
+}
+
+.card__p {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.card__ul {
+    margin-bottom: 36px;
+}
+
+.card__li {
+    font-size: 14px;
+    color: #eee;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.card__li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 4px;
+    left: 0;
+    background-image: url(https://www.sportfit-obolon.com.ua/wp-content/themes/sportfit/assets/img/svg/ok.svg);
+    background-repeat: no-repeat;
+}
+
+.card__price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #eee;
+}
+
+.table-prices {
+    width: 100%;
+    height: 10%;
+    border: 1px solid #2f2f31;
+    border-collapse: collapse;
+    color: #ddd;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.table-wrap {
+    width: -webkit-calc(65% - 100px);
+    width: -moz-calc(65% - 100px);
+    width: calc(65% - 100px);
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+    -moz-box-flex: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+    overflow-y: auto;
+}
+
+.table-prices {
+    width: 100%;
+    height: 10%;
+    border: 1px solid #2f2f31;
+    border-collapse: collapse;
+    color: #ddd;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+
+.table-prices__td_head {
+    border: 1px solid #2f2f31;
+}
+
+.table-prices__td {
+    padding: 15px;
+}
+
+
+
+/*Form*/
+
+.contact_form{
+    display: flex;
+    margin: 0   auto;
+
+    width: 100%;
+    justify-content: center;
+
+}
+
+.contact_form form{
+    background: crimson;
+    padding: 25px 0 40px 30px;
+    width: 50%;
+
+}
+
+.contact_form form hr{
+    width:50px;
+    height: 7px;
+    left: 0;
+    margin: 10px 0 ;
+    border: none;
+    background-color: #666666;
+}
+
+.wrap_fields{
+
+    width: 50%;
+    margin: 0  ;
+}
+
+.contact_form form .title{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.contact{
+    width: 50%;
+    background: white;
+    padding: 25px 0 40px 14px;
+}
+
+.fields{
+
+
+    margin: 0 auto;
+
+
+}
+
+
+.fields input{
+ display: block;
+    width: 80%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px ;
+    margin: 10px 0 15px  0;
+
+}
+
+.fields label{
+   color: white;
+
+}
+
+.wrap_fields button{
+
+    border: 2px solid #8b0000;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+    padding: 0 30px;
+    -webkit-transition: .3s cubic-bezier(.86,.18,.86,1.31);
+    -o-transition: .3s cubic-bezier(.86,.18,.86,1.31);
+    -moz-transition: .3s cubic-bezier(.86,.18,.86,1.31);
+    transition: .3s cubic-bezier(.86,.18,.86,1.31);
+    cursor: pointer;
+}
+
+
+
+
+
+
+.navigation__li form  {
+    display: none;
+    position: absolute;
+	width: 500px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+    transform:  translate(-200px,25px);
+}
+
+.navigation__li h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.navigation__li input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.navigation__li label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.navigation__li button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+.navigation__li button:hover{
+	opacity: .7;
+}
+.navigation__li .error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.navigation__li .success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.navigation__li h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.navigation__li .ca {
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #444;
+}
+.navigation__li .ca:hover {
+	text-decoration: underline;
+} 
