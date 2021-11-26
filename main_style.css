@@ -1012,7 +1012,18 @@ tr {
 
 
 
-.navigation__li form  {
+.login_window  {
+    display: none;
+    position: absolute;
+	width: 500px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+    transform:  translate(-200px,25px);
+}
+
+.singup_window  {
     display: none;
     position: absolute;
 	width: 500px;

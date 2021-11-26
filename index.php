@@ -83,11 +83,11 @@ $single_training= mysqli_query($conn,"SELECT * FROM `single_trainnig`");
 				<a href="#about" class="navigation__link">Про клуб</a>
 			</li><li class="navigation__li">
 				<a href="#prices" class="navigation__link">Ціни</a>
-			</li><li id="log_but" class="navigation__li">
-				<a  class="navigation__link">Вхід</a>
+			</li><li  class="navigation__li">
+				<a id="log_but" class="navigation__link">Вхід</a>
 
 
-                <form id="login" action="login.php" method="post">
+                <form  class="login_window" id="login" action="login.php" method="post">
      	<h2>LOGIN</h2>
      	<?php if (isset($_GET['error'])) { ?>
      		<p class="error"><?php echo $_GET['error']; ?></p>
@@ -102,8 +102,58 @@ $single_training= mysqli_query($conn,"SELECT * FROM `single_trainnig`");
           <a href="signup.php" class="ca">Create an account</a>
 
      </form>
-			</li><li class="navigation__li">
-				<a href="#contacts" class="navigation__link">Регістрація</a>
+			</li><li  class="navigation__li">
+				<a href="#contacts" id="sing_btn"  class="navigation__link">Регістрація</a>
+
+                <form class="singup_window" id="singup" action="signup-check.php" method="post">
+     	<h2>SIGN UP</h2>
+     	<?php if (isset($_GET['error'])) { ?>
+     		<p class="error"><?php echo $_GET['error']; ?></p>
+     	<?php } ?>
+
+          <?php if (isset($_GET['success'])) { ?>
+               <p class="success"><?php echo $_GET['success']; ?></p>
+          <?php } ?>
+
+          <label>Name</label>
+          <?php if (isset($_GET['name'])) { ?>
+               <input type="text" 
+                      name="name" 
+                      placeholder="Name"
+                      value="<?php echo $_GET['name']; ?>"><br>
+          <?php }else{ ?>
+               <input type="text" 
+                      name="name" 
+                      placeholder="Name"><br>
+          <?php }?>
+
+          <label>User Name</label>
+          <?php if (isset($_GET['uname'])) { ?>
+               <input type="text" 
+                      name="uname" 
+                      placeholder="User Name"
+                      value="<?php echo $_GET['uname']; ?>"><br>
+          <?php }else{ ?>
+               <input type="text" 
+                      name="uname" 
+                      placeholder="User Name"><br>
+          <?php }?>
+
+
+     	<label>Password</label>
+     	<input type="password" 
+                 name="password" 
+                 placeholder="Password"><br>
+
+          <label>Re Password</label>
+          <input type="password" 
+                 name="re_password" 
+                 placeholder="Re_Password"><br>
+
+     	<button  type="submit">Sign Up</button>
+          <a href="index.php" class="ca">Already have an account?</a>
+     </form>
+
 			</li>                </ul>
 
 		</nav>
@@ -680,13 +730,16 @@ $single_training= mysqli_query($conn,"SELECT * FROM `single_trainnig`");
     AOS.init();
 // Get the modal
 var modals = document.getElementById("myModal");
-var log_window = document.getElementById("login");
+var log = document.getElementById("login");
+var singup = document.getElementById("singup");
+
 
 // Get the button that opens the modal
 var btn1 = document.getElementById("myBtn1");
 var btn2 = document.getElementById("myBtn2");
-var btn3 = document.getElementById("myBtn3");  
-var btn_log  = document.getElementById("log_but") ;
+var btn3 = document.getElementById("myBtn3"); 
+var log_btn = document.getElementById("log_but"); 
+var sing_btn = document.getElementById("sing_btn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("controls__btn")[0];
@@ -705,15 +758,33 @@ btn2.onclick = function() {
 btn3.onclick = function() {
 	modals.style.display= 'block';
 }
-btn_log.onclick = function() {
-    if (log_window.style.display === 'none'){
-        log_window.style.display= 'block';
+
+log_btn.onclick = function (){
+
+    if(log.style.display === 'none'){
+    log.style.display = "block";
+    singup.style.display = "none";
+
     }
     else {
-        log_window.style.display = 'none';}
-        
-	
+        log.style.display = "none";
+
+    }
 }
+
+sing_btn.onclick = function (){
+
+if(singup.style.display === 'none'){
+singup.style.display = "block";
+log.style.display = "none";
+
+}
+else {
+    singup.style.display = "none";
+
+}
+}
+
 
 span.onclick = function() {
 	modals.style.display = "none";
@@ -723,7 +794,7 @@ span.onclick = function() {
 window.onclick = function(event) {
 	if (event.target === modals  ) {
 		modals.style.display = "none";
-        log_window.style.display = "none";
+        
 	}
 }
 
