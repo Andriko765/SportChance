@@ -15,10 +15,10 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 	$pass = validate($_POST['password']);
 
 	if (empty($uname)) {
-		header("Location: index.php?error=User Name is required");
+		header("Location: index.php?error=Це поле є обов'язковиим");
 	    exit();
 	}else if(empty($pass)){
-        header("Location: index.php?error=Password is required");
+        header("Location: index.php?error=Введіть пароль");
 	    exit();
 	}else{
 		// hashing the password
@@ -32,17 +32,25 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 		if (mysqli_num_rows($result) === 1) {
 			$row = mysqli_fetch_assoc($result);
             if ($row['user_name'] === $uname && $row['password'] === $pass) {
-            	$_SESSION['user_name'] = $row['user_name'];
+
+				if($row['email_varificated_at'] != null){
+					$_SESSION['user_name'] = $row['user_name'];
             	$_SESSION['name'] = $row['name'];
             	$_SESSION['id'] = $row['id'];
             	header("Location: home.php");
 		        exit();
+				}
+				else{
+					header("Location: index.php?error=Будь ласка, підтвердьте свій email");
+		        exit();
+				}
+            	
             }else{
-				header("Location: index.php?error=Incorect User name or password");
+				header("Location: index.php?error=Нікнейм або пароль не правильний");
 		        exit();
 			}
 		}else{
-			header("Location: index.php?error=Incorect User name or password");
+			header("Location: index.php?error=Нікнейм або пароль не правильний");
 	        exit();
 		}
 	}

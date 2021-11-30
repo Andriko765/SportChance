@@ -92,14 +92,14 @@ $single_training= mysqli_query($conn,"SELECT * FROM `single_trainnig`");
      	<?php if (isset($_GET['error'])) { ?>
      		<p class="error"><?php echo $_GET['error']; ?></p>
      	<?php } ?>
-     	<label>User Name</label>
-     	<input type="text" name="uname" placeholder="User Name"><br>
+     	<label>Ваш нікнейм</label>
+     	<input type="text" name="uname" placeholder="Нікнейм"><br>
 
-     	<label>Password</label>
-     	<input type="password" name="password" placeholder="Password"><br>
+     	<label>Пароль</label>
+     	<input type="password" name="password" ><br>
 
-     	<button type="submit">Login</button>
-          <a href="signup.php" class="ca">Create an account</a>
+     	<button type="submit">Ввійти</button>
+          <a href="signup.php" class="ca">Створити аккаунт</a>
 
      </form>
 			</li><li  class="navigation__li">
@@ -115,43 +115,55 @@ $single_training= mysqli_query($conn,"SELECT * FROM `single_trainnig`");
                <p class="success"><?php echo $_GET['success']; ?></p>
           <?php } ?>
 
-          <label>Name</label>
+          <label>Ваше Ім'я</label>
           <?php if (isset($_GET['name'])) { ?>
                <input type="text" 
                       name="name" 
-                      placeholder="Name"
+                      placeholder="Ваше Ім'я"
                       value="<?php echo $_GET['name']; ?>"><br>
-          <?php }else{ ?>
+          <?php }else{ ?> 
                <input type="text" 
                       name="name" 
-                      placeholder="Name"><br>
+                      placeholder="Нікнейм"><br>
           <?php }?>
 
-          <label>User Name</label>
+          <label>Придумайе нікнайм</label>
           <?php if (isset($_GET['uname'])) { ?>
                <input type="text" 
                       name="uname" 
-                      placeholder="User Name"
+                      placeholder="Никнейм"
                       value="<?php echo $_GET['uname']; ?>"><br>
           <?php }else{ ?>
                <input type="text" 
                       name="uname" 
-                      placeholder="User Name"><br>
+                      placeholder="Ваше і'мя"><br>
+          <?php }?>
+
+          <label>Ваш email</label>
+          <?php if (isset($_GET['uname'])) { ?>
+               <input type="text" 
+                      name="email" 
+                      placeholder="asonq@gmail.com"
+                      value="<?php echo $_GET['email']; ?>"><br>
+          <?php }else{ ?>
+               <input type="text" 
+                      name="email" 
+                      placeholder="Ваш email"><br>
           <?php }?>
 
 
-     	<label>Password</label>
+     	<label>Придумайте пароль</label>
      	<input type="password" 
                  name="password" 
-                 placeholder="Password"><br>
+                 ><br>
 
-          <label>Re Password</label>
+          <label>Повторіть пароль</label>
           <input type="password" 
                  name="re_password" 
-                 placeholder="Re_Password"><br>
+                 placeholder="Повторіть пароль"><br>
 
-     	<button  type="submit">Sign Up</button>
-          <a href="index.php" class="ca">Already have an account?</a>
+     	<button  type="submit">Зареєструватися</button>
+          <a href="index.php" class="ca">Вже зареєстровані?</a>
      </form>
 
 			</li>                </ul>
@@ -696,7 +708,7 @@ $single_training= mysqli_query($conn,"SELECT * FROM `single_trainnig`");
 
                     </div>
                     <button type="submit">
-                        <a>Відправити</a>
+                        Відправити
                     </button>
                 </div>
             </form>

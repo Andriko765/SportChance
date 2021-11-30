@@ -1,6 +1,8 @@
 <?php
-
 session_start();
+if( isset ($_SESSION['id']) && isset($_SESSION['user_name']))
+{
+
 
 require_once ('php/CreateDb.php');
 require_once ('./php/component.php');
@@ -84,3 +86,8 @@ if (isset($_POST['add'])){
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+<?php
+}else{
+    header("Location: index.php");
+}
+?>

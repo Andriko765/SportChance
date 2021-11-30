@@ -1,16 +1,22 @@
 <?php
+require_once ("cart.php");
 
-$name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
-$email = $_POST['user_email'];
+$name = $_POST['user_name'];
+$address =$_POST['user_address'] ;
+
 $token = "2124388790:AAGa4jL0a9muw5RlTw9cyhha41LM45bxVEs";
 $chat_id = "-662282094";
 $arr = array(
-  "Ім'я користвача"  => $name,
+  "Замовлення",
+  "Назва товару"  => $product = implode(",",$product_array),
   'Номер телефону: ' => $phone,
-  'Email' => $email
+  "Ім'я покупця" => $name,
+  "Андреса" => $address,
+  "Сума" => $total 
 );
 
+echo $arr;
 foreach($arr as $key => $value) {
   $txt .= "<b>".$key."</b> ".$value."%0A";
 };

@@ -3,7 +3,7 @@
 function component($productname, $productprice, $productimg, $productid){
     $element = "
     
-    <div class=\"col-md-3 col-sm-6 my-3 my-md-0\">
+    <div class=\"col-md-3 col-sm-6 my-3 my-md-0 \" style=\" margin-bottom: 15px !important; margin-top:10px !important; \" >
                 <form action=\"home.php\" method=\"post\">
                     <div class=\"card shadow\">
                         <div>
@@ -26,7 +26,7 @@ function component($productname, $productprice, $productimg, $productid){
                                 <span class=\"price\">$$productprice</span>
                             </h5>
 
-                            <button type=\"submit\" class=\"btn btn-warning my-3\" name=\"add\">Add to Cart <i class=\"fas fa-shopping-cart\"></i></button>
+                            <button type=\"submit\" class=\"btn btn-warning my-3\" name=\"add\">Придбати <i class=\"fas fa-shopping-cart\"></i></button>
                              <input type='hidden' name='product_id' value='$productid'>
                         </div>
                     </div>
@@ -47,10 +47,10 @@ function cartElement($productimg, $productname, $productprice, $productid){
                             </div>
                             <div class=\"col-md-6\">
                                 <h5 class=\"pt-2\">$productname</h5>
-                                <small class=\"text-secondary\">Seller: dailytuition</small>
+                                <small class=\"text-secondary\">Продавець: SportChance</small>
                                 <h5 class=\"pt-2\">$$productprice</h5>
                                 <button type=\"submit\" class=\"btn btn-warning\">Save for Later</button>
-                                <button type=\"submit\" class=\"btn btn-danger mx-2\" name=\"remove\">Remove</button>
+                                <button type=\"submit\" class=\"btn btn-danger mx-2\" name=\"remove\">Видалити</button>
                             </div>
                             <div class=\"col-md-3 py-5\">
                                 <div>

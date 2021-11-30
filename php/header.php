@@ -1,11 +1,13 @@
 
 <header id="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="index.php" class="navbar-brand">
+        <a href="home.php" class="navbar-brand">
             <h3 class="px-5">
-                <i class="fas fa-shopping-basket"></i> Shopping Cart
+                <i class="fas fa-shopping-basket"></i> SportChance товари
             </h3>
         </a>
+
+        <a href="logout.php" class="nav-item nav-link active"> <h4 class="px-4">Доброго дня,<?php echo $_SESSION['name']?></h4></a>
         <button class="navbar-toggler"
             type="button"
                 data-toggle="collapse"
@@ -22,7 +24,7 @@
             <div class="navbar-nav">
                 <a href="cart.php" class="nav-item nav-link active">
                     <h5 class="px-5 cart">
-                        <i class="fas fa-shopping-cart"></i> Cart
+                        <i class="fas fa-shopping-cart"></i> Корзина
                         <?php
 
                         if (isset($_SESSION['cart'])){
